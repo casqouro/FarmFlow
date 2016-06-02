@@ -1,0 +1,103 @@
+
+everything.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Gridboard
+  rotate: false
+  xy: 1, 1
+  size: 510, 510
+  orig: 510, 510
+  offset: 0, 0
+  index: -1
+cow
+  rotate: false
+  xy: 513, 411
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+cowclicked
+  rotate: false
+  xy: 513, 309
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 0
+cowidle
+  rotate: false
+  xy: 513, 309
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 0
+cowmove
+  rotate: false
+  xy: 513, 309
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 0
+cowclicked
+  rotate: false
+  xy: 615, 411
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 1
+cowclicked
+  rotate: false
+  xy: 513, 207
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 2
+cowclicked
+  rotate: false
+  xy: 615, 309
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 3
+cowidle
+  rotate: false
+  xy: 717, 411
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 1
+cowidle
+  rotate: false
+  xy: 513, 105
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 2
+cowidle
+  rotate: false
+  xy: 615, 207
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 3
+cowmove
+  rotate: false
+  xy: 717, 309
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 1
+cowmove
+  rotate: false
+  xy: 819, 411
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 2
+cowmove
+  rotate: false
+  xy: 513, 3
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 3
