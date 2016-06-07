@@ -38,9 +38,9 @@ public class CharacterActor extends Widget {
         moveSound = Gdx.audio.newSound(Gdx.files.internal(type + "move.ogg"));
         clickedSound = Gdx.audio.newSound(Gdx.files.internal(type + "clicked.ogg"));                                     
         
-        idleAnim = new Animation(1 / 4f, everything.findRegions("cowidle"), PlayMode.LOOP);
-        moveAnim = new Animation(1 / 4f, everything.findRegions("cowmove"), PlayMode.LOOP);
-        clickedAnim = new Animation(1 / 4f, everything.findRegions("cowclicked"), PlayMode.LOOP);
+        idleAnim = new Animation(1 / 4f, everything.findRegions(type + "idle"), PlayMode.LOOP);
+        moveAnim = new Animation(1 / 4f, everything.findRegions(type + "move"), PlayMode.LOOP);
+        clickedAnim = new Animation(1 / 4f, everything.findRegions(type + "clicked"), PlayMode.LOOP);
         currentAnim = idleAnim; // idle == green, clicked == blue, move == red
                 
         startingPosition = start;
@@ -48,7 +48,7 @@ public class CharacterActor extends Widget {
         destinationPosition = destination;
         
         cow = everything.findRegion("cow");  
-        setDimensions(cow.getRegionWidth(), cow.getRegionHeight());
+        setDimensions(idleAnim.getKeyFrames()[0].getRegionWidth(), idleAnim.getKeyFrames()[0].getRegionHeight());
         setPosition(start.x, start.y);
     }
     
@@ -88,17 +88,17 @@ public class CharacterActor extends Widget {
     
     public void setAnimation(int num) {
         if (num == 0) {
-            System.out.println("current to idle");
+            //System.out.println("current to idle");
             currentAnim = idleAnim;
         }
         
         if (num == 1) {
-            System.out.println("current to move");            
+            //System.out.println("current to move");            
             currentAnim = moveAnim;
         }
         
         if (num == 2) {
-            System.out.println("current to clicked");            
+            //System.out.println("current to clicked");  
             currentAnim = clickedAnim;
         }
     }

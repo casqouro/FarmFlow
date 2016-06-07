@@ -6,11 +6,10 @@ import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
-import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -22,6 +21,8 @@ public class FarmFlow extends ApplicationAdapter {
         Table table;
         GridBoard board;
         TextureRegion background;
+        
+        TextureAtlas everything; // TEMP
     
 	@Override
 	public void create () {
@@ -30,7 +31,9 @@ public class FarmFlow extends ApplicationAdapter {
             Gdx.input.setInputProcessor(stage);
             camera = new OrthographicCamera(510, 510);
             camera.position.set(camera.viewportWidth * 0.5f, camera.viewportHeight * 0.5f, 0);
-            camera.update();            
+            camera.update();    
+            
+            everything = new TextureAtlas(Gdx.files.internal("everything.atlas")); // TEMP
                         
             try {
                 board = new GridBoard(1);
@@ -52,6 +55,14 @@ public class FarmFlow extends ApplicationAdapter {
 
             batch.begin();
             batch.draw(background, 0, 0);
+            
+            // TEMP
+            for (int a = 0; a < 25; a++) {
+                if (board.locations[a/5][a%5] == 1) {
+                    batch.draw(everything.findRegion("cowhighlight"), (a/5) * 100 + (a/5) * 2, (a%5) * 100 + (a%5) * 2);                    
+                }
+            }
+            
             batch.end();
             
             stage.act();

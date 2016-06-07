@@ -1,2 +1,2 @@
 LEVEL	BACKGROUND	CHARACTERS+NUM+TYPE+SX+SY+EX+EY
-1 Gridboard 1 cow 3 3 4 4
+1 Gridboard 2 cow 3 3 4 4 farmer 0 0 2 2

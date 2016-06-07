@@ -59,45 +59,157 @@ cowclicked
   orig: 100, 100
   offset: 0, 0
   index: 3
-cowidle
+cowhighlight
   rotate: false
   xy: 717, 411
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
-  index: 1
+  index: -1
 cowidle
   rotate: false
   xy: 513, 105
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
-  index: 2
+  index: 1
 cowidle
   rotate: false
   xy: 615, 207
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
-  index: 3
-cowmove
+  index: 2
+cowidle
   rotate: false
   xy: 717, 309
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
-  index: 1
+  index: 3
 cowmove
   rotate: false
   xy: 819, 411
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
-  index: 2
+  index: 1
 cowmove
   rotate: false
   xy: 513, 3
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
+  index: 2
+cowmove
+  rotate: false
+  xy: 615, 105
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
   index: 3
+farmer
+  rotate: false
+  xy: 717, 207
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+farmerclicked
+  rotate: false
+  xy: 819, 309
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 0
+farmeridle
+  rotate: false
+  xy: 819, 309
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 0
+farmermove
+  rotate: false
+  xy: 819, 309
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 0
+farmerclicked
+  rotate: false
+  xy: 921, 411
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 1
+farmerclicked
+  rotate: false
+  xy: 615, 3
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 2
+farmerclicked
+  rotate: false
+  xy: 717, 105
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 3
+farmerhighlight
+  rotate: false
+  xy: 819, 207
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+farmeridle
+  rotate: false
+  xy: 921, 309
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 1
+farmeridle
+  rotate: false
+  xy: 717, 3
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 2
+farmeridle
+  rotate: false
+  xy: 819, 105
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 3
+farmermove
+  rotate: false
+  xy: 921, 207
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 1
+farmermove
+  rotate: false
+  xy: 819, 3
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 2
+farmermove
+  rotate: false
+  xy: 921, 105
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 3
+tractorhighlight
+  rotate: false
+  xy: 921, 3
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
