@@ -6,14 +6,16 @@ import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.Animation.PlayMode;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.Action;
+import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.ui.Widget;
 import com.badlogic.gdx.utils.Array;
 import java.awt.Point;
 
 public class CharacterActor extends Widget {
     private float elapsedTime = 0;    
+    private       int number;
+    private final String name;
     
     private final Sound idleSound;
     private final Sound moveSound;
@@ -26,13 +28,11 @@ public class CharacterActor extends Widget {
     
     private final Point startingPosition;
     private final Point currentPosition;
-    private final Point destinationPosition;   
-    
-    private final TextureAtlas everything;
-    private final TextureRegion cow;
+    private final Point destinationPosition;       
     
     CharacterActor(String type, Point start, Point destination) {   
-        everything = new TextureAtlas(Gdx.files.internal("everything.atlas"));        
+        TextureAtlas everything = new TextureAtlas(Gdx.files.internal("everything.atlas")); 
+        name = type;
         
         idleSound = Gdx.audio.newSound(Gdx.files.internal(type + "idle.ogg"));
         moveSound = Gdx.audio.newSound(Gdx.files.internal(type + "move.ogg"));
@@ -46,9 +46,9 @@ public class CharacterActor extends Widget {
         startingPosition = start;
         currentPosition = start;
         destinationPosition = destination;
-        
-        cow = everything.findRegion("cow");  
-        setDimensions(idleAnim.getKeyFrames()[0].getRegionWidth(), idleAnim.getKeyFrames()[0].getRegionHeight());
+         
+        //setDimensions(idleAnim.getKeyFrames()[0].getRegionWidth(), idleAnim.getKeyFrames()[0].getRegionHeight());
+        setActorBounds(100, 100);
         setPosition(start.x, start.y);
     }
     
@@ -75,15 +75,16 @@ public class CharacterActor extends Widget {
         elapsedTime += delta;
     }    
     
-    public final void setDimensions(float x, float y) {
+    // Set actor BOUNDS, not image SIZE
+    public final void setActorBounds(float x, float y) {
         this.setWidth(x);
         this.setHeight(y);
     }
     
     @Override
     public final void setPosition(float x, float y) {
-        this.setX(x * 100 + x * 2);
-        this.setY(y * 100 + y * 2);
+        this.setX(x * 100);
+        this.setY(y * 100);;
     }
     
     public void setAnimation(int num) {
@@ -115,6 +116,18 @@ public class CharacterActor extends Widget {
         if (num == 2) {
             clickedSound.play();
         }
+    }  
+    
+    public void setNumber(int num) {
+        number = num;
+    }
+    
+    public int getNumber() {
+        return number;
+    }
+    
+    public String getActorName() {
+        return name;
     }
     
     @Override

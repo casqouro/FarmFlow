@@ -5,210 +5,273 @@ filter: Nearest,Nearest
 repeat: none
 Gridboard
   rotate: false
-  xy: 1, 1
+  xy: 1, 511
   size: 510, 510
   orig: 510, 510
   offset: 0, 0
   index: -1
 cow
   rotate: false
-  xy: 513, 411
+  xy: 1, 409
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 cowclicked
   rotate: false
-  xy: 513, 309
+  xy: 513, 921
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 0
 cowidle
   rotate: false
-  xy: 513, 309
+  xy: 513, 921
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 0
 cowmove
   rotate: false
-  xy: 513, 309
+  xy: 513, 921
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 0
 cowclicked
   rotate: false
-  xy: 615, 411
+  xy: 1, 307
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 1
 cowclicked
   rotate: false
-  xy: 513, 207
+  xy: 103, 409
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 2
 cowclicked
   rotate: false
-  xy: 615, 309
+  xy: 513, 819
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 3
-cowhighlight
-  rotate: false
-  xy: 717, 411
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
 cowidle
   rotate: false
-  xy: 513, 105
+  xy: 615, 921
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 1
 cowidle
   rotate: false
-  xy: 615, 207
+  xy: 1, 205
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 2
 cowidle
   rotate: false
-  xy: 717, 309
+  xy: 103, 307
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 3
 cowmove
   rotate: false
-  xy: 819, 411
+  xy: 205, 409
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 1
 cowmove
   rotate: false
-  xy: 513, 3
+  xy: 513, 717
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 2
 cowmove
   rotate: false
-  xy: 615, 105
+  xy: 615, 819
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 3
 farmer
   rotate: false
-  xy: 717, 207
+  xy: 717, 921
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 farmerclicked
   rotate: false
-  xy: 819, 309
+  xy: 1, 103
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 0
 farmeridle
   rotate: false
-  xy: 819, 309
+  xy: 1, 103
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 0
 farmermove
   rotate: false
-  xy: 819, 309
+  xy: 1, 103
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 0
 farmerclicked
   rotate: false
-  xy: 921, 411
+  xy: 103, 205
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 1
 farmerclicked
   rotate: false
-  xy: 615, 3
+  xy: 205, 307
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 2
 farmerclicked
   rotate: false
-  xy: 717, 105
+  xy: 307, 409
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 3
-farmerhighlight
+farmeridle
   rotate: false
-  xy: 819, 207
+  xy: 513, 615
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 1
+farmeridle
+  rotate: false
+  xy: 615, 717
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 2
+farmeridle
+  rotate: false
+  xy: 717, 819
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 3
+farmermove
+  rotate: false
+  xy: 819, 921
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 1
+farmermove
+  rotate: false
+  xy: 1, 1
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 2
+farmermove
+  rotate: false
+  xy: 103, 103
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 3
+grassclicked
+  rotate: false
+  xy: 205, 205
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 0
+grassidle
+  rotate: false
+  xy: 205, 205
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 3
+grassmove
+  rotate: false
+  xy: 205, 205
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-farmeridle
+grassclicked
   rotate: false
-  xy: 921, 309
+  xy: 307, 307
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 1
-farmeridle
+grassclicked
   rotate: false
-  xy: 717, 3
+  xy: 409, 409
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 2
-farmeridle
+grassclicked
   rotate: false
-  xy: 819, 105
+  xy: 513, 513
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 3
-farmermove
+grassidle
   rotate: false
-  xy: 921, 207
+  xy: 615, 615
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 0
+grassidle
+  rotate: false
+  xy: 717, 717
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 1
-farmermove
+grassidle
   rotate: false
-  xy: 819, 3
+  xy: 819, 819
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: 2
-farmermove
+highlight1
   rotate: false
-  xy: 921, 105
+  xy: 921, 921
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
-  index: 3
-tractorhighlight
+  index: -1
+highlight2
   rotate: false
-  xy: 921, 3
+  xy: 103, 1
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+highlight3
+  rotate: false
+  xy: 205, 103
   size: 100, 100
   orig: 100, 100
   offset: 0, 0

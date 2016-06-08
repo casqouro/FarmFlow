@@ -23,6 +23,9 @@ public class FarmFlow extends ApplicationAdapter {
         TextureRegion background;
         
         TextureAtlas everything; // TEMP
+        TextureRegion highlight1;
+        TextureRegion highlight2;
+        TextureRegion highlight3;
     
 	@Override
 	public void create () {
@@ -52,20 +55,22 @@ public class FarmFlow extends ApplicationAdapter {
 	public void render () {
             Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);                        
             batch.setProjectionMatrix(camera.combined);
-
-            batch.begin();
-            batch.draw(background, 0, 0);
-            
-            // TEMP
-            for (int a = 0; a < 25; a++) {
-                if (board.locations[a/5][a%5] == 1) {
-                    batch.draw(everything.findRegion("cowhighlight"), (a/5) * 100 + (a/5) * 2, (a%5) * 100 + (a%5) * 2);                    
-                }
-            }
-            
-            batch.end();
             
             stage.act();
             stage.draw();            
+
+            batch.begin();
+            //batch.draw(background, 0, 0);
+            
+            // TEMP
+            for (int a = 0; a < 25; a++) {
+                int location = board.locations[a/5][a%5];
+                if (location != 0) {
+                    batch.draw(everything.findRegion("highlight" + location), (a/5) * 100 + 4, (a%5) * 100 + 4);  
+                    System.out.println((a/5) * 100);
+                }
+            }
+            
+            batch.end();                       
 	}       
 }
